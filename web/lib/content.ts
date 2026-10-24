@@ -1,6 +1,6 @@
 // Typed port of data/select-content.js (the handoff keeps the JS for the browser tests).
 // Keep the two in step; scripts/content-tests.mjs covers the JS version.
-import demo from '../../project/data/demo-content.json';
+import demo from '../../project/data/site-content.json';
 import uiLabels from '../../project/data/ui-labels.tr.json';
 import type { DemoContent, Release, ScopeView, ScopeSource, Market, Package, ScopeRecord } from '../../project/data/content-model';
 

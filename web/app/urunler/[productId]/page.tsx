@@ -57,8 +57,8 @@ export default async function ProductDetailPageRoute({ params }: { params: Promi
         </Stack>
         <Grid columns={3}>
           {packages.map((p) => (
-            <Card key={p.id} variant="outlined" title={p.name} titleLevel={3}>
-              <Text variant="body-sm" tone="secondary">{page.packageCardText}</Text>
+            <Card key={p.id} variant="outlined" title={p.name} titleLevel={3} eyebrow={p.tagline ? <Text variant="mono" tone="secondary">{p.tagline}</Text> : undefined}>
+              {p.description ? <Text variant="body-sm" tone="secondary">{p.description}</Text> : null}
             </Card>
           ))}
         </Grid>
