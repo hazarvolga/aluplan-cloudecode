@@ -21,7 +21,8 @@ export default function ProductsPage() {
       href: p.id === 'allplan' ? '/urunler/allplan' : null,
     };
   });
-  const roles = [{ id: page.allRole.id, label: page.allRole.label, icon: page.allRole.icon, description: page.allRole.description }, ...content.roles];
+  // Role filter appears only when the source defines roles; the site does not, so it is hidden.
+  const roles = content.roles.length ? [{ id: page.allRole.id, label: page.allRole.label, icon: page.allRole.icon, description: page.allRole.description }, ...content.roles] : [];
   return (
     <SiteShell current="/urunler">
       <Section id="urunler">

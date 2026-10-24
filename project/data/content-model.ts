@@ -28,7 +28,7 @@ export interface Release {
 }
 
 /** Persistent package / edition identity. Its scope is NOT stored here (it varies by release and market). */
-export interface Package { id: Id; productId: Id; name: string }
+export interface Package { id: Id; productId: Id; name: string; tagline?: string; description?: string }
 export interface CapabilityGroup { id: Id; label: string; capabilities: { id: Id; name: string }[] }
 
 export interface ScopeSource {

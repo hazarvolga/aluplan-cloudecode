@@ -1,0 +1,5648 @@
+{
+ "$meta": {
+  "status": "demo",
+  "contract": "Site-sourced content v1 (aluplan.com.tr + aluplan-2026 repo). Not approved; verification pending.",
+  "notice": "Kaynak: aluplan.com.tr ve aluplan-2026 veri dosyaları (2026-10-24). Paket kapsamı ve sürüm durumu henüz onaylanmadı; doğrulanmamış bilgi olarak gösterilir.",
+  "locale": "tr-TR"
+ },
+ "site": {
+  "nav": [
+   {
+    "id": "nav-products",
+    "label": "Ürünler",
+    "href": "#products"
+   },
+   {
+    "id": "nav-compare",
+    "label": "Paket karşılaştırması",
+    "href": "#compare"
+   },
+   {
+    "id": "nav-announcements",
+    "label": "Duyurular",
+    "href": "https://aluplan.com.tr/onemli-bilgiler-baglantilar/"
+   },
+   {
+    "id": "nav-learn",
+    "label": "Eğitim",
+    "href": "https://learnnow.allplan.com/course/search.php"
+   },
+   {
+    "id": "nav-support",
+    "label": "Teknik destek",
+    "href": "https://teams.microsoft.com/meet/39783115346098?p=wIo7WWYLZwqoHtjq3Y"
+   }
+  ],
+  "footer": [
+   {
+    "id": "f-portfolio",
+    "heading": "Portföy",
+    "links": [
+     {
+      "id": "f-products",
+      "label": "Ürünler",
+      "href": "#products"
+     },
+     {
+      "id": "f-compare",
+      "label": "Paket karşılaştırması",
+      "href": "#compare"
+     }
+    ]
+   },
+   {
+    "id": "f-services",
+    "heading": "Hizmetler",
+    "links": [
+     {
+      "id": "f-training",
+      "label": "Eğitim",
+      "href": "#egitim"
+     },
+     {
+      "id": "f-support",
+      "label": "Teknik destek",
+      "href": "#destek"
+     }
+    ]
+   },
+   {
+    "id": "f-company",
+    "heading": "Aluplan",
+    "links": [
+     {
+      "id": "f-about",
+      "label": "Hakkımızda (yer tutucu)",
+      "href": "#hakkimizda"
+     },
+     {
+      "id": "f-contact",
+      "label": "İletişim",
+      "href": "#iletisim"
+     }
+    ]
+   }
+  ],
+  "legal": "© Aluplan. Yasal metin ve şirket bilgileri yer tutucudur."
+ },
+ "ctas": [
+  {
+   "id": "quote",
+   "kind": "quote",
+   "label": "Teklif iste",
+   "href": "https://forms.office.com/r/hXhnKAG912",
+   "external": true
+  },
+  {
+   "id": "trial",
+   "kind": "trial",
+   "label": "Deneme veya abonelik seçenekleri",
+   "href": "https://www.allplan.com/trial-or-subscription",
+   "external": true
+  }
+ ],
+ "roles": [],
+ "markets": [
+  {
+   "id": "tr",
+   "label": "Türkiye"
+  }
+ ],
+ "products": [
+  {
+   "id": "allplan",
+   "name": "ALLPLAN",
+   "vendor": "ALLPLAN Türkiye (Aluplan)",
+   "summary": "Yenilikçi AEC iş akışları, otomasyon ve bulut tabanlı iş birliği ile daha başarılı projeler.",
+   "roles": [],
+   "isDemo": false
+  }
+ ],
+ "releases": [
+  {
+   "id": "allplan-2026",
+   "productId": "allplan",
+   "version": "ALLPLAN 2026",
+   "sequence": 2026,
+   "status": "placeholder",
+   "sourceNote": "Kaynak: aluplan.com.tr ana sayfasında \"ALLPLAN 2026\" ve \"ÇIKTI\" bağlantısı. Güncel sürüm onayı yapılmadı; yenilik listesi kaynakta madde madde yok.",
+   "items": []
+  }
+ ],
+ "packages": [
+  {
+   "id": "basic",
+   "productId": "allplan",
+   "name": "Basic",
+   "tagline": "Temel 2D/3D Çizim",
+   "description": "Temel BIM yetenekleriyle güvenilir modelleme ve dokümantasyon. Küçük ve orta ölçekli projeler için ideal giriş seviyesi paket."
+  },
+  {
+   "id": "concept",
+   "productId": "allplan",
+   "name": "Concept",
+   "tagline": "Konsept Tasarım",
+   "description": "Konsept tasarımda hızlı iterasyon ve esnek iş akışları. Erken aşama görselleştirme ve varyant çalışmaları için optimize edilmiştir."
+  },
+  {
+   "id": "professional",
+   "productId": "allplan",
+   "name": "Professional",
+   "tagline": "Tam Kapsamlı BIM",
+   "description": "Gelişmiş üretim çıktıları ve kapsamlı dokümantasyon. Profesyonel ekipler için üretkenlik odaklı araç seti."
+  },
+  {
+   "id": "ultimate",
+   "productId": "allplan",
+   "name": "Ultimate",
+   "tagline": "En Kapsamlı Paket",
+   "description": "En kapsamlı modül ve entegrasyonlar, üst seviye işbirliği ve otomasyon. Büyük ve kompleks projeler için maksimum yetenek."
+  },
+  {
+   "id": "civil",
+   "productId": "allplan",
+   "name": "Civil",
+   "tagline": "Altyapı Özel Çözüm",
+   "description": "Altyapı, yol ve köprü tasarımlarında parametrik modelleme ve analiz. Disiplinler arası koordinasyon için güçlü araçlar."
+  },
+  {
+   "id": "precast-slabs",
+   "productId": "allplan",
+   "name": "Precast Slabs",
+   "tagline": "Prekast Döşeme",
+   "description": "Prekast döşeme üretimi için özel çözüm."
+  },
+  {
+   "id": "precast-walls",
+   "productId": "allplan",
+   "name": "Precast Walls",
+   "tagline": "Prekast Duvar",
+   "description": "Prekast duvar üretimi için özel çözüm."
+  },
+  {
+   "id": "precast",
+   "productId": "allplan",
+   "name": "Precast",
+   "tagline": "Prekast Özel Çözüm",
+   "description": "Prekast eleman tasarımı ve üretim planlamasında uçtan uca otomasyon. Çizim, metraj ve iş planı süreçlerinde hız ve doğruluk."
+  }
+ ],
+ "capabilityGroups": [
+  {
+   "id": "core",
+   "label": "Temel Özellikler",
+   "capabilities": [
+    {
+     "id": "interface",
+     "name": "Arayüz"
+    },
+    {
+     "id": "3d-modeling",
+     "name": "3B Modelleme"
+    },
+    {
+     "id": "2d-drawing",
+     "name": "2B Çizim"
+    },
+    {
+     "id": "clash-detection",
+     "name": "Çakışma Kontrolü"
+    },
+    {
+     "id": "bim-easy",
+     "name": "İçerik Paketi BIM Easy"
+    },
+    {
+     "id": "visualization",
+     "name": "Görselleştirme"
+    },
+    {
+     "id": "external-data",
+     "name": "Dış Veri Kaynakları"
+    },
+    {
+     "id": "building-components",
+     "name": "Yapı Bileşenleri"
+    },
+    {
+     "id": "info-management",
+     "name": "Gelişmiş Bilgi Modellemesi ve Yönetimi"
+    }
+   ]
+  },
+  {
+   "id": "terrain",
+   "label": "Arazi ve Peyzaj",
+   "capabilities": [
+    {
+     "id": "terrain-model",
+     "name": "Arazi Modeli"
+    },
+    {
+     "id": "urban-landscape",
+     "name": "Şehir Bölge Planlaması ve Peyzaj Tasarımı"
+    },
+    {
+     "id": "utilities",
+     "name": "Kanalizasyon ve Tesisler"
+    }
+   ]
+  },
+  {
+   "id": "analysis",
+   "label": "Analiz ve Metraj",
+   "capabilities": [
+    {
+     "id": "quantity-cost",
+     "name": "Metraj ve Maliyet"
+    },
+    {
+     "id": "advanced-viz",
+     "name": "Gelişmiş Görseleştirme"
+    }
+   ]
+  },
+  {
+   "id": "structural",
+   "label": "Yapısal Mühendislik",
+   "capabilities": [
+    {
+     "id": "reinforcement",
+     "name": "Donatı"
+    },
+    {
+     "id": "steel-connections",
+     "name": "Çelik Bağlantılar"
+    }
+   ]
+  },
+  {
+   "id": "infrastructure",
+   "label": "Altyapı ve Yol",
+   "capabilities": [
+    {
+     "id": "road",
+     "name": "Yol (Road)"
+    },
+    {
+     "id": "site-planning",
+     "name": "Şantiye Planlaması"
+    },
+    {
+     "id": "foundation-works",
+     "name": "Temel İşleri"
+    },
+    {
+     "id": "excavation",
+     "name": "Arazi Kazılar"
+    }
+   ]
+  },
+  {
+   "id": "precast-design",
+   "label": "Prekast Tasarım",
+   "capabilities": [
+    {
+     "id": "precast-components",
+     "name": "Prekast Tasarım ve Detaylandırma"
+    },
+    {
+     "id": "production-drawings",
+     "name": "Eleman Planı (Üretim Paftası)"
+    },
+    {
+     "id": "parametric-modeling",
+     "name": "Parametrik Modelleme"
+    }
+   ]
+  },
+  {
+   "id": "bridge",
+   "label": "Köprü ve Öngerilme",
+   "capabilities": [
+    {
+     "id": "prestressed-tendons",
+     "name": "Parametrik Öngerilimli Tendonlar"
+    },
+    {
+     "id": "bridge-analysis",
+     "name": "Yapısal Köprü Analizi"
+    },
+    {
+     "id": "bridge-design",
+     "name": "Kod Bazlı Köprü Tasarımı"
+    }
+   ]
+  },
+  {
+   "id": "precast-manufacturing",
+   "label": "Prekast İmalat",
+   "capabilities": [
+    {
+     "id": "precast-slabs-manufacturing",
+     "name": "Prekast Döşeme İmalatı"
+    },
+    {
+     "id": "precast-walls-manufacturing",
+     "name": "Prekast Duvar İmalatı"
+    },
+    {
+     "id": "prefab-connectors",
+     "name": "Prefabrik Konnektörler"
+    }
+   ]
+  },
+  {
+   "id": "language",
+   "label": "Dil Desteği",
+   "capabilities": [
+    {
+     "id": "tr-en",
+     "name": "İngilizce, Türkçe Dil ve Ülke Ayarları"
+    },
+    {
+     "id": "all-languages",
+     "name": "Diğer Tüm Diller ve Ülke Ayarları"
+    }
+   ]
+  },
+  {
+   "id": "scia",
+   "label": "Yapısal Analiz ve Tasarım - SCIA Engineer",
+   "capabilities": [
+    {
+     "id": "scia-concept",
+     "name": "SCIA Engineer - Concept Edition"
+    },
+    {
+     "id": "scia-ultimate",
+     "name": "SCIA Engineer Ultimate Edition"
+    }
+   ]
+  },
+  {
+   "id": "cloud-services",
+   "label": "ALLPLAN Cloud Services",
+   "capabilities": [
+    {
+     "id": "bimplus",
+     "name": "Bulut tabanlı işbirliği"
+    },
+    {
+     "id": "share",
+     "name": "Proje Ekip Çalışması"
+    },
+    {
+     "id": "workgroup",
+     "name": "Ofis Ekip Çalışması (Workgroup)"
+    },
+    {
+     "id": "exchange",
+     "name": "Çizim ve Plan Dağıtımı"
+    },
+    {
+     "id": "cloud-resources",
+     "name": "Bulut Destekli Proje Kaynakları"
+    },
+    {
+     "id": "autoconverter",
+     "name": "Analitik Model Oluşturma"
+    },
+    {
+     "id": "bluebeam",
+     "name": "ALLPLAN - Bluebeam Bağlantısı"
+    },
+    {
+     "id": "model-viewer",
+     "name": "ALLPLAN Model Görüntüleyici"
+    },
+    {
+     "id": "ai-viz",
+     "name": "AI-Destekli Görseleştirme (yeni)"
+    }
+   ]
+  },
+  {
+   "id": "purchasable",
+   "label": "Satınalınabilir Seçenekler",
+   "capabilities": [
+    {
+     "id": "license-server",
+     "name": "License Server/Yüzer Lisans"
+    },
+    {
+     "id": "bimplus-extra",
+     "name": "BIMPLUS"
+    },
+    {
+     "id": "cloud-storage",
+     "name": "Allplan Cloud Storage"
+    },
+    {
+     "id": "bim2form",
+     "name": "BIM²form Add On - Kalıp"
+    }
+   ]
+  }
+ ],
+ "scopeRecords": [
+  {
+   "id": "sr-1",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "interface",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-2",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "interface",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-3",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "interface",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-4",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "interface",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-5",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "interface",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-6",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "interface",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-7",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "interface",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-8",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "interface",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-9",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "3d-modeling",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-10",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "3d-modeling",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-11",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "3d-modeling",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-12",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "3d-modeling",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-13",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "3d-modeling",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-14",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "3d-modeling",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-15",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "3d-modeling",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-16",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "3d-modeling",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-17",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "2d-drawing",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-18",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "2d-drawing",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-19",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "2d-drawing",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-20",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "2d-drawing",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-21",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "2d-drawing",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-22",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "2d-drawing",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-23",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "2d-drawing",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-24",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "2d-drawing",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-25",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "clash-detection",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-26",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "clash-detection",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-27",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "clash-detection",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-28",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "clash-detection",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-29",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "clash-detection",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-30",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "clash-detection",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-31",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "clash-detection",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-32",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "clash-detection",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-33",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bim-easy",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-34",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bim-easy",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-35",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bim-easy",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-36",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bim-easy",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-37",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bim-easy",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-38",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bim-easy",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-39",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bim-easy",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-40",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bim-easy",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-41",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "visualization",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-42",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "visualization",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-43",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "visualization",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-44",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "visualization",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-45",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "visualization",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-46",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "visualization",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-47",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "visualization",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-48",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "visualization",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-49",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "external-data",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-50",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "external-data",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-51",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "external-data",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-52",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "external-data",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-53",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "external-data",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-54",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "external-data",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-55",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "external-data",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-56",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "external-data",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-57",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "building-components",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-58",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "building-components",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-59",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "building-components",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-60",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "building-components",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-61",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "building-components",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-62",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "building-components",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-63",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "building-components",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-64",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "building-components",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-65",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "info-management",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-66",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "info-management",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-67",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "info-management",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-68",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "info-management",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-69",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "info-management",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-70",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "info-management",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-71",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "info-management",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-72",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "info-management",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-73",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "terrain-model",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-74",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "terrain-model",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-75",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "terrain-model",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-76",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "terrain-model",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-77",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "terrain-model",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-78",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "terrain-model",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-79",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "terrain-model",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-80",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "terrain-model",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-81",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "urban-landscape",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-82",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "urban-landscape",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-83",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "urban-landscape",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-84",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "urban-landscape",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-85",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "urban-landscape",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-86",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "urban-landscape",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-87",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "urban-landscape",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-88",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "urban-landscape",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-89",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "utilities",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-90",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "utilities",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-91",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "utilities",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-92",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "utilities",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-93",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "utilities",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-94",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "utilities",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-95",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "utilities",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-96",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "utilities",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-97",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "quantity-cost",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-98",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "quantity-cost",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-99",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "quantity-cost",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-100",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "quantity-cost",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-101",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "quantity-cost",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-102",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "quantity-cost",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-103",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "quantity-cost",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-104",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "quantity-cost",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-105",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "advanced-viz",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-106",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "advanced-viz",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-107",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "advanced-viz",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-108",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "advanced-viz",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-109",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "advanced-viz",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-110",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "advanced-viz",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-111",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "advanced-viz",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-112",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "advanced-viz",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-113",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "reinforcement",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-114",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "reinforcement",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-115",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "reinforcement",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-116",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "reinforcement",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-117",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "reinforcement",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-118",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "reinforcement",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-119",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "reinforcement",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-120",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "reinforcement",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-121",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "steel-connections",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-122",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "steel-connections",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-123",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "steel-connections",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-124",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "steel-connections",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-125",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "steel-connections",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-126",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "steel-connections",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-127",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "steel-connections",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-128",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "steel-connections",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-129",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "road",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-130",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "road",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-131",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "road",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-132",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "road",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-133",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "road",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-134",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "road",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-135",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "road",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-136",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "road",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-137",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "site-planning",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-138",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "site-planning",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-139",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "site-planning",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-140",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "site-planning",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-141",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "site-planning",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-142",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "site-planning",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-143",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "site-planning",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-144",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "site-planning",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-145",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "foundation-works",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-146",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "foundation-works",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-147",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "foundation-works",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-148",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "foundation-works",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-149",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "foundation-works",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-150",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "foundation-works",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-151",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "foundation-works",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-152",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "foundation-works",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-153",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "excavation",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-154",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "excavation",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-155",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "excavation",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-156",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "excavation",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-157",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "excavation",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-158",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "excavation",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-159",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "excavation",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-160",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "excavation",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-161",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-components",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-162",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-components",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-163",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-components",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-164",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-components",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-165",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-components",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-166",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-components",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-167",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-components",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-168",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-components",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-169",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "production-drawings",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-170",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "production-drawings",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-171",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "production-drawings",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-172",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "production-drawings",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-173",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "production-drawings",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-174",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "production-drawings",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-175",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "production-drawings",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-176",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "production-drawings",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-177",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "parametric-modeling",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-178",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "parametric-modeling",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-179",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "parametric-modeling",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-180",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "parametric-modeling",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-181",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "parametric-modeling",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-182",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "parametric-modeling",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-183",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "parametric-modeling",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-184",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "parametric-modeling",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-185",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "prestressed-tendons",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-186",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "prestressed-tendons",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-187",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "prestressed-tendons",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-188",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "prestressed-tendons",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-189",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "prestressed-tendons",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-190",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "prestressed-tendons",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-191",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "prestressed-tendons",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-192",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "prestressed-tendons",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-193",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bridge-analysis",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-194",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bridge-analysis",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-195",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bridge-analysis",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-196",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bridge-analysis",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-197",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bridge-analysis",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-198",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bridge-analysis",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-199",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bridge-analysis",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-200",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bridge-analysis",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-201",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bridge-design",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-202",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bridge-design",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-203",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bridge-design",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-204",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bridge-design",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-205",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bridge-design",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-206",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bridge-design",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-207",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bridge-design",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-208",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bridge-design",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-209",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-slabs-manufacturing",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-210",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-slabs-manufacturing",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-211",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-slabs-manufacturing",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-212",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-slabs-manufacturing",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-213",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-slabs-manufacturing",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-214",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-slabs-manufacturing",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-215",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-slabs-manufacturing",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-216",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-slabs-manufacturing",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-217",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-walls-manufacturing",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-218",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-walls-manufacturing",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-219",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-walls-manufacturing",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-220",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-walls-manufacturing",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-221",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-walls-manufacturing",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-222",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-walls-manufacturing",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-223",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-walls-manufacturing",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-224",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "precast-walls-manufacturing",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-225",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "prefab-connectors",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-226",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "prefab-connectors",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-227",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "prefab-connectors",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-228",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "prefab-connectors",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-229",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "prefab-connectors",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-230",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "prefab-connectors",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-231",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "prefab-connectors",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-232",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "prefab-connectors",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-233",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "tr-en",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-234",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "tr-en",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-235",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "tr-en",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-236",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "tr-en",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-237",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "tr-en",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-238",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "tr-en",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-239",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "tr-en",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-240",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "tr-en",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-241",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "all-languages",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-242",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "all-languages",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-243",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "all-languages",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-244",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "all-languages",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-245",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "all-languages",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-246",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "all-languages",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-247",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "all-languages",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-248",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "all-languages",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-249",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "scia-concept",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-250",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "scia-concept",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-251",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "scia-concept",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-252",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "scia-concept",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-253",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "scia-concept",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-254",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "scia-concept",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-255",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "scia-concept",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-256",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "scia-concept",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-257",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "scia-ultimate",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-258",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "scia-ultimate",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-259",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "scia-ultimate",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-260",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "scia-ultimate",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-261",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "scia-ultimate",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-262",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "scia-ultimate",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-263",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "scia-ultimate",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-264",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "scia-ultimate",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-265",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bimplus",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-266",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bimplus",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-267",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bimplus",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-268",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bimplus",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-269",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bimplus",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-270",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bimplus",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-271",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bimplus",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-272",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bimplus",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-273",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "share",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-274",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "share",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-275",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "share",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-276",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "share",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-277",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "share",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-278",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "share",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-279",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "share",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-280",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "share",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-281",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "workgroup",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-282",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "workgroup",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-283",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "workgroup",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-284",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "workgroup",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-285",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "workgroup",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-286",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "workgroup",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-287",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "workgroup",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-288",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "workgroup",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-289",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "exchange",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-290",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "exchange",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-291",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "exchange",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-292",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "exchange",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-293",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "exchange",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-294",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "exchange",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-295",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "exchange",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-296",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "exchange",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-297",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "cloud-resources",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-298",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "cloud-resources",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-299",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "cloud-resources",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-300",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "cloud-resources",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-301",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "cloud-resources",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-302",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "cloud-resources",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-303",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "cloud-resources",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-304",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "cloud-resources",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-305",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "autoconverter",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-306",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "autoconverter",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-307",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "autoconverter",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-308",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "autoconverter",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-309",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "autoconverter",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-310",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "autoconverter",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-311",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "autoconverter",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-312",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "autoconverter",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-313",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bluebeam",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-314",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bluebeam",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-315",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bluebeam",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-316",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bluebeam",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-317",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bluebeam",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-318",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bluebeam",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-319",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bluebeam",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-320",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bluebeam",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-321",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "model-viewer",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-322",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "model-viewer",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-323",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "model-viewer",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-324",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "model-viewer",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-325",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "model-viewer",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-326",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "model-viewer",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-327",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "model-viewer",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-328",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "model-viewer",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-329",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "ai-viz",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-330",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "ai-viz",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-331",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "ai-viz",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-332",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "ai-viz",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-333",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "ai-viz",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-334",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "ai-viz",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-335",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "ai-viz",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-336",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "ai-viz",
+   "availability": "included",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-337",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "license-server",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-338",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "license-server",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-339",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "license-server",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-340",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "license-server",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-341",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "license-server",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-342",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "license-server",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-343",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "license-server",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-344",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "license-server",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-345",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bimplus-extra",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-346",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bimplus-extra",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-347",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bimplus-extra",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-348",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bimplus-extra",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-349",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bimplus-extra",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-350",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bimplus-extra",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-351",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bimplus-extra",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-352",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bimplus-extra",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-353",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "cloud-storage",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-354",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "cloud-storage",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-355",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "cloud-storage",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-356",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "cloud-storage",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-357",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "cloud-storage",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-358",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "cloud-storage",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-359",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "cloud-storage",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-360",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "cloud-storage",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-361",
+   "packageId": "basic",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bim2form",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-362",
+   "packageId": "concept",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bim2form",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-363",
+   "packageId": "professional",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bim2form",
+   "availability": "excluded",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-364",
+   "packageId": "ultimate",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bim2form",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-365",
+   "packageId": "civil",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bim2form",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-366",
+   "packageId": "precast-slabs",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bim2form",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-367",
+   "packageId": "precast-walls",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bim2form",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  },
+  {
+   "id": "sr-368",
+   "packageId": "precast",
+   "releaseId": "allplan-2026",
+   "marketId": "tr",
+   "capabilityId": "bim2form",
+   "availability": "optional",
+   "source": {
+    "kind": "official-document",
+    "ref": "aluplan.com.tr · data/PackageComparisonData.ts (V2026 paket karşılaştırma)",
+    "retrievedAt": "2026-10-24"
+   },
+   "verification": "unverified"
+  }
+ ],
+ "resources": [],
+ "support": [],
+ "pages": {
+  "products": {
+   "title": "Ürünler",
+   "intro": "ALLPLAN ürün ailesi ve paketleri. Paket ayrıntıları ve kapsam bilgisi ayrı sayfalarda gösterilir.",
+   "roleLegend": "Hangi ekip için arıyorsunuz?",
+   "allRole": {
+    "id": "all",
+    "label": "Tümü",
+    "icon": "layers",
+    "description": "Tüm portföy kayıtları."
+   }
+  },
+  "productDetail": {
+   "packagesHeading": "Paketler",
+   "packagesIntro": "Paket, ürünün kapsam setidir; ürün adı ve yıllık sürümden ayrı tutulur.",
+   "releaseHeading": "Yenilikler",
+   "releaseEmpty": "Bu ürün için sürüm bilgisi yok.",
+   "resourcesHeading": "Kaynaklar",
+   "supportHeading": "Eğitim ve destek",
+   "faqHeading": "Kavramlar",
+   "faq": [
+    {
+     "id": "faq-entities",
+     "question": "Ürün, paket ve sürüm arasındaki fark nedir?",
+     "answer": "Ürün yazılımın kendisidir. Paket, o ürünün kapsam setidir. Sürüm, ürünün yıllık yayınıdır. Sayfada üçü ayrı bileşenlerle gösterilir."
+    },
+    {
+     "id": "faq-unknown",
+     "question": "“Bilgi yok” bir özelliğin olmadığı anlamına mı gelir?",
+     "answer": "Hayır. Kapsam doğrulanmadığı için gösterilemiyor demektir. “Dahil değil” yalnız doğrulanmış bilgi için kullanılır."
+    }
+   ],
+   "ctaHeading": "Teklif veya deneme",
+   "ctaText": "Her iki bağlantı da harici sayfada yeni sekmede açılır. Bu sayfa form göndermez."
+  },
+  "comparison": {
+   "titleSuffix": "paket karşılaştırması",
+   "intro": "Satırlar yetenek alanlarını, sütunlar paketleri gösterir. Kapsam; paket, sürüm ve pazar birleşimine bağlıdır. Doğrulanmamış veya kaydı olmayan hücreler “Bilgi yok” olarak işaretlenir ve “Dahil değil” ile karıştırılmaz.",
+   "captionSuffix": "paket kapsamı (kaynak: V2026 paket karşılaştırması)",
+   "footnote": "Kaynak tablo: aluplan.com.tr paket karşılaştırması. Tabloda listelenmeyen paket-özellik çiftleri \"Dahil değil\" olarak işaretlenir; kaynak onayı yapılmadı.",
+   "ctaHeading": "Paket seçiminde yardım",
+   "ctaText": "Teklif formu ve deneme sayfası harici bağlantılardır."
+  }
+ }
+}

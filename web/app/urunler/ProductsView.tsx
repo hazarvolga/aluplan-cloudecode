@@ -17,7 +17,7 @@ export function ProductsView({ rows, roles, roleLegend, countText }: { rows: Row
   const list = rows.filter((p) => role === 'all' || p.roles.includes(role));
   return (
     <>
-      <RoleSelector legend={roleLegend} roles={roles} value={role} onChange={setRole} />
+      {roles.length ? <RoleSelector legend={roleLegend} roles={roles} value={role} onChange={setRole} /> : null}
       <Text variant="body-sm" tone="secondary" aria-live="polite">{fmt(countText, { count: list.length })}</Text>
       <Grid columns={3}>
         {list.map((p) => (
