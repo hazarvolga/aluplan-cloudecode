@@ -1,0 +1,16 @@
+{
+ "$meta": {"locale": "tr-TR", "purpose": "Generic interface labels (UI dictionary). Editorial and product content lives in demo-content.json."},
+ "skipLink": "İçeriğe geç",
+ "home": "Ana sayfa",
+ "products": "Ürünler",
+ "demoBadge": "Demo içerik",
+ "demoAlertTitle": "Demo içerik",
+ "compareCta": "Paketleri karşılaştır",
+ "backToProduct": "ürün sayfasına dön",
+ "releaseSelect": "Sürüm",
+ "marketSelect": "Pazar",
+ "scopeSummary": "Kapsam kayıtları: {records} · doğrulanmamış: {unverified} · kaynak: {sources}",
+ "productCount": "{count} ürün kaydı gösteriliyor.",
+ "loading": "Yükleniyor…",
+ "loadError": "İçerik yüklenemedi"
+}

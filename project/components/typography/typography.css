@@ -1,0 +1,16 @@
+/* Heading, Text. Visual size is independent of semantic level. */
+.alu-heading{margin:0;font-family:var(--font-heading);font-weight:var(--font-weight-heading);letter-spacing:var(--font-letter-spacing-heading);color:var(--text-primary);text-wrap:balance;overflow-wrap:break-word;hyphens:manual}
+.alu-heading--display{font-size:var(--type-display-size);line-height:var(--type-display-line-height);font-weight:var(--font-weight-display);letter-spacing:var(--font-letter-spacing-display)}
+.alu-heading--h1{font-size:var(--type-h1-size);line-height:var(--type-h1-line-height)}
+.alu-heading--h2{font-size:var(--type-h2-size);line-height:var(--type-h2-line-height)}
+.alu-heading--h3{font-size:var(--type-h3-size);line-height:var(--type-h3-line-height)}
+.alu-heading--h4{font-size:var(--type-h4-size);line-height:var(--type-h4-line-height)}
+.alu-text{margin:0;font-family:var(--font-body);font-size:var(--type-body-size);line-height:var(--type-body-line-height);color:var(--text-primary);text-wrap:pretty;overflow-wrap:break-word}
+.alu-text--body-lg{font-size:var(--type-body-lg-size);line-height:var(--type-body-lg-line-height)}
+.alu-text--body-sm{font-size:var(--type-body-sm-size);line-height:var(--type-body-sm-line-height)}
+.alu-text--caption{font-size:var(--type-caption-size);line-height:var(--type-caption-line-height)}
+.alu-text--label{font-size:var(--type-label-size);line-height:var(--type-label-line-height);font-weight:var(--font-weight-label)}
+.alu-text--mono{font-family:var(--font-mono);font-size:var(--type-mono-size);line-height:var(--type-mono-line-height);letter-spacing:var(--font-letter-spacing-mono)}
+.alu-text--secondary{color:var(--text-secondary)}
+.alu-text--strong{font-weight:var(--font-weight-strong)}
+.alu-text--prose{max-width:var(--container-prose)}

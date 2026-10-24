@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="tr" data-theme="aluplan" data-mode="light">
+<head>
+<meta charset="utf-8">
+<title>Aluplan DS — test harness</title>
+<link rel="stylesheet" href="../styles.css">
+<style>body{padding:24px;font-family:var(--font-body)}table{border-collapse:collapse;width:100%;font-size:13px}td,th{border-top:1px solid var(--border-default);padding:4px 8px;text-align:left;vertical-align:top}.p{color:var(--status-success-fg)}.f{color:var(--status-danger-fg);font-weight:600}.m{color:var(--status-warning-fg)}#stage{position:absolute;left:-10000px;top:0;width:900px}#frames iframe{border:0;position:absolute;left:-12000px;top:0}</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="source-loader.js" data-root="../" data-force="1"></script>
+<script src="../data/select-content.js"></script>
+</head>
+<body data-phase="frames">
+<h1>Aluplan DS — UI kit checks (theme invariance, reflow). Slow: ~40 page loads.</h1>
+<p id="status">Running…</p>
+<table><thead><tr><th>Suite</th><th>Test</th><th>Result</th><th>Detail</th></tr></thead><tbody id="out"></tbody></table>
+<div id="stage"></div><div id="frames"></div>
+<script>
+(async function () {
+  const rows = []; const out = document.getElementById('out');
+  const add = (suite, name, pass, detail) => { rows.push({ suite, name, pass, detail: detail || '' }); console.log('ALU_ROW ' + (pass === true ? 'PASS' : pass === 'manual' ? 'MANUAL' : 'FAIL') + ' [' + suite + '] ' + name + (pass === true ? '' : ' — ' + (detail || ''))); const tr = document.createElement('tr'); tr.innerHTML = '<td>' + suite + '</td><td></td><td class="' + (pass === true ? 'p' : pass === 'manual' ? 'm' : 'f') + '">' + (pass === true ? 'PASS' : pass === 'manual' ? 'MANUAL' : 'FAIL') + '</td><td></td>'; tr.children[1].textContent = name; tr.children[3].textContent = detail || ''; out.appendChild(tr); };
+  const txt = (p) => fetch('../' + p).then((r) => { if (!r.ok) throw new Error(p + ' ' + r.status); return r.text(); });
+  const strip = (s) => s.slice(0, s.indexOf('// --- CLI ---')).replace(/^import .*$/mg, '').replace(/export (function|const)/g, '$1');
+  const h = React.createElement; const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+  try {
+    // ---------- Token + content suites (same code as the Node CLIs) ----------
+    const lib = new Function(strip(await txt('scripts/build-tokens.mjs')) + ';return {buildTokens,lintComponentCss,GENERATED};')();
+    const runTokenTests = new Function('buildTokens', 'lintComponentCss', 'GENERATED', strip(await txt('scripts/token-tests.mjs')) + ';return runTokenTests;')(lib.buildTokens, lib.lintComponentCss, lib.GENERATED);
+    const cssList = ['components/base.css', 'components/actions/actions.css', 'components/typography/typography.css', 'components/layout/layout.css', 'components/surfaces/surfaces.css', 'components/forms/forms.css', 'components/feedback/feedback.css', 'components/disclosure/disclosure.css', 'components/navigation/navigation.css', 'components/patterns/patterns.css', 'components/responsive.generated.css'];
+    const cssFiles = {}; for (const p of cssList) cssFiles[p] = await txt(p);
+    const onDisk = {}; for (const p of lib.GENERATED) onDisk[p] = await txt(p);
+    const tokens = JSON.parse(await txt('tokens/tokens.json'));
+    const tr = runTokenTests({ T: tokens, template: await txt('components/responsive.template.css'), cssFiles, onDisk });
+    tr.results.forEach((r) => add('tokens', r.name, r.pass, r.detail));
+    const content = JSON.parse(await txt('data/demo-content.json'));
+    const runContentTests = new Function(strip(await txt('scripts/content-tests.mjs')) + ';return runContentTests;')();
+    runContentTests({ content, selectors: window.AluplanContent, tokens }).results.forEach((r) => add('content', r.name, r.pass, r.detail));
+
+    // ---------- Component behaviour (current sources via source-loader) ----------
+    const C = window.AluplanDesignSystem_84a18c;
+    add('components', 'components compiled from current sources (source mode)', !!(window.__ALU_SOURCE_MODE && C && C.Tabs), '');
+    const stage = document.getElementById('stage');
+    const mount = (el) => { const d = document.createElement('div'); stage.appendChild(d); const root = ReactDOM.createRoot(d); ReactDOM.flushSync(() => root.render(el)); return { d, root }; };
+    const tabState = (d) => { const tabs = [...d.querySelectorAll('[role=tab]')]; return { selected: tabs.filter((t) => t.getAttribute('aria-selected') === 'true').map((t) => t.textContent), focusable: tabs.filter((t) => t.tabIndex === 0).map((t) => t.textContent), panels: [...d.querySelectorAll('[role=tabpanel]')].filter((p) => !p.hidden).length }; };
+    const key = (el, k) => el.dispatchEvent(new KeyboardEvent('keydown', { key: k, bubbles: true }));
+    const items = [{ id: 'a', label: 'A', disabled: true, content: 'pa' }, { id: 'b', label: 'B', content: 'pb' }, { id: 'c', label: 'C', disabled: true, content: 'pc' }, { id: 'd', label: 'D', content: 'pd' }];
+    { const { d } = mount(h(C.Tabs, { label: 't', items })); const s = tabState(d); add('Tabs', 'first item disabled → first ENABLED tab is active', s.selected[0] === 'B' && s.focusable.join() === 'B' && s.panels === 1, JSON.stringify(s));
+      const b = d.querySelector('[role=tab]:nth-child(2)'); b.focus(); key(b, 'ArrowRight'); await sleep(0); let s2 = tabState(d); add('Tabs', 'ArrowRight skips disabled tab (B → D) and moves focus', s2.selected[0] === 'D' && document.activeElement.textContent === 'D', JSON.stringify(s2));
+      key(document.activeElement, 'ArrowRight'); await sleep(0); s2 = tabState(d); add('Tabs', 'ArrowRight wraps to first enabled (D → B)', s2.selected[0] === 'B', JSON.stringify(s2));
+      key(document.activeElement, 'End'); await sleep(0); add('Tabs', 'End → last enabled (D)', tabState(d).selected[0] === 'D', '');
+      key(document.activeElement, 'Home'); await sleep(0); add('Tabs', 'Home → first enabled (B)', tabState(d).selected[0] === 'B', '');
+      key(document.activeElement, 'ArrowLeft'); await sleep(0); add('Tabs', 'ArrowLeft wraps backwards (B → D)', tabState(d).selected[0] === 'D', ''); }
+    { const { d } = mount(h(C.Tabs, { label: 't', items: items.map((i) => ({ ...i, disabled: true })) })); const s = tabState(d); add('Tabs', 'all disabled → no active tab, nothing focusable, no panel', s.selected.length === 0 && s.focusable.length === 0 && s.panels === 0, JSON.stringify(s)); }
+    { const { d } = mount(h(C.Tabs, { label: 't', items: [] })); add('Tabs', 'empty list renders nothing', d.innerHTML === '', d.innerHTML); }
+    { let calls = 0; const { d } = mount(h(C.Tabs, { label: 't', items, selectedId: 'c', onChange: () => calls++ })); const s = tabState(d); add('Tabs', 'controlled with disabled selectedId → first enabled shown, onChange not auto-called', s.selected[0] === 'B' && calls === 0, JSON.stringify(s) + ' calls=' + calls); }
+    { const { d, root } = mount(h(C.Tabs, { label: 't', items, defaultTabId: 'd' })); const before = tabState(d).selected[0];
+      ReactDOM.flushSync(() => root.render(h(C.Tabs, { label: 't', items: items.map((i) => i.id === 'd' ? { ...i, disabled: true } : i), defaultTabId: 'd' }))); const after = tabState(d).selected[0];
+      ReactDOM.flushSync(() => root.render(h(C.Tabs, { label: 't', items: items.filter((i) => i.id !== 'd'), defaultTabId: 'd' }))); const removed = tabState(d).selected[0];
+      add('Tabs', 'uncontrolled: active tab disabled or removed → falls back to first enabled', before === 'D' && after === 'B' && removed === 'B', [before, after, removed].join(' → ')); }
+    { const { d } = mount(h(C.ReleaseTag, { version: 'X' })); add('ReleaseTag', 'missing status → "statü bilinmiyor", never "güncel"', /statü bilinmiyor/.test(d.textContent) && !/güncel/.test(d.textContent), d.textContent); }
+    { const { d } = mount(h(C.ReleaseTag, { version: 'X', status: 'bogus' })); add('ReleaseTag', 'invalid status → unknown', /statü bilinmiyor/.test(d.textContent), d.textContent); }
+    // Duplicate key warnings with repeated href/label
+    const errs = []; const origErr = console.error; console.error = function () { errs.push([].join.call(arguments, ' ')); origErr.apply(console, arguments); };
+    mount(h(C.Breadcrumb, { items: [{ label: 'Aynı', href: '#' }, { label: 'Aynı', href: '#' }, { label: 'Son' }] }));
+    mount(h(C.SiteHeader, { logoSrc: '../assets/logo/aluplan-logo-white-filled.svg', navItems: [{ id: 'n1', label: 'Aynı', href: '#' }, { id: 'n2', label: 'Aynı', href: '#' }], actions: [{ id: 'a1', label: 'X', href: '#' }, { id: 'a2', label: 'X', href: '#' }] }));
+    mount(h(C.SiteFooter, { logoSrc: '../assets/logo/aluplan-logo-white-filled.svg', columns: [{ id: 'c1', heading: 'H', links: [{ id: 'l1', label: 'L', href: '#' }, { id: 'l2', label: 'L', href: '#' }] }, { id: 'c2', heading: 'H', links: [] }] }));
+    mount(h(C.CtaGroup, { actions: [{ id: 'q', kind: 'quote', label: 'T', href: 'https://example.invalid/' }, { id: 't', kind: 'trial', label: 'T', href: 'https://example.invalid/' }] }));
+    await sleep(50); console.error = origErr;
+    const keyErrs = errs.filter((e) => /same key|unique "key"/i.test(e));
+    add('keys', 'repeated href/label (with and without ids) → 0 React key warnings', keyErrs.length === 0, keyErrs.length + ' warnings');
+    // Dialog
+    { const opener = document.createElement('button'); opener.textContent = 'open'; stage.appendChild(opener); opener.focus();
+      let closed = 0; const { d, root } = mount(h(C.Dialog, { open: false, title: 'T', onClose: () => closed++ }));
+      ReactDOM.flushSync(() => root.render(h(C.Dialog, { open: true, title: 'T', onClose: () => closed++ }))); await sleep(30);
+      const dlg = d.querySelector('dialog'); add('Dialog', 'open → dialog is modal and focus moves inside', dlg.open && dlg.contains(document.activeElement), 'active=' + (document.activeElement && document.activeElement.tagName));
+      dlg.querySelector('button[aria-label]').click(); await sleep(30);
+      add('Dialog', 'close button → dialog closed, onClose fired, focus returned to opener', !dlg.open && closed === 1 && document.activeElement === opener, 'closed=' + closed + ' active=' + (document.activeElement && document.activeElement.textContent));
+      add('Dialog', 'Esc closes (native cancel)', 'manual', 'Synthetic key events do not trigger the native cancel; verify by hand.'); }
+    // Logo render on dark surface (saved file)
+    { const img = new Image(); img.src = '../assets/logo/aluplan-logo-white-filled.svg'; await img.decode(); const cv = document.createElement('canvas'); cv.width = 665; cv.height = 134; const x = cv.getContext('2d'); x.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--surface-brand').trim() || 'black'; x.fillRect(0, 0, 665, 134); x.drawImage(img, 0, 0, 665, 134);
+      const px = x.getImageData(0, 0, 665, 134).data; let w = 0; for (let i = 0; i < px.length; i += 4) if (px[i] > 240 && px[i + 1] > 240 && px[i + 2] > 240) w++;
+      add('logo', 'filled variant renders white on --surface-brand', w > 1000, w + ' white pixels'); }
+
+    if (!/frames/.test(document.body.dataset.phase || '')) throw { skip: true };
+    // ---------- UI kit in iframes: theme invariance + reflow ----------
+    const frames = document.getElementById('frames');
+    const load = (hash, { theme = 'aluplan', mode = 'light', width = 1200, scale = '100' } = {}) => new Promise((resolve, reject) => {
+      const f = document.createElement('iframe'); f.style.width = width + 'px'; f.style.height = '900px';
+      console.log('ALU_LOAD ' + hash + ' ' + theme + '/' + mode + ' ' + width + ' ' + scale); f.src = '../ui_kits/website/index.html' + (location.search ? location.search + '&' : '?') + 'embed=1&source=1&theme=' + theme + '&mode=' + mode + '&scale=' + scale + hash; frames.appendChild(f);
+      const t0 = Date.now(); const poll = () => { try { const d = f.contentDocument; if (d && d.querySelector('#main h1') && d.querySelector('.alu-site-footer')) return setTimeout(() => resolve(f), 400); } catch (e) {} if (Date.now() - t0 > 20000) return reject(new Error('timeout ' + hash)); setTimeout(poll, 150); }; poll();
+    });
+    const snap = (d) => JSON.stringify({ text: d.querySelector('#main').textContent.replace(/\s+/g, ' ').trim(), links: [...d.querySelectorAll('a[href]')].map((a) => a.getAttribute('href')), headings: [...d.querySelectorAll('h1,h2,h3,h4,h5,h6')].map((x) => x.tagName + ':' + x.textContent.trim()), landmarks: [...d.querySelectorAll('header,nav,main,footer,section,table')].length });
+    for (const hash of ['#product', '#compare']) {
+      const snaps = {}; for (const [theme, mode] of [['aluplan', 'light'], ['aluplan', 'dark'], ['field', 'light'], ['field', 'dark']]) { const f = await load(hash, { theme, mode }); snaps[theme + '/' + mode] = snap(f.contentDocument); f.remove(); }
+      const vals = Object.values(snaps); add('theme invariance', hash + ': text, link targets, heading levels and landmarks identical across 4 theme×mode combos', vals.every((v) => v === vals[0]), vals.every((v) => v === vals[0]) ? '' : 'differs');
+    }
+    for (const hash of ['#product', '#compare', '#products']) for (const width of [360, 768]) for (const scale of ['100', '200']) for (const theme of ['aluplan', 'field']) {
+      const f = await load(hash, { width, scale, theme }); const d = f.contentDocument; const se = d.scrollingElement;
+      const offenders = [...d.querySelectorAll('body *')].filter((el) => { const r = el.getBoundingClientRect(); return r.right > width + 1 && !el.closest('.alu-comparison__scroll'); }).slice(0, 3).map((el) => el.tagName + '.' + ((el.getAttribute && el.getAttribute('class')) || '').split(' ')[0] + '@' + Math.round(el.getBoundingClientRect().right));
+      add('reflow', hash + ' @' + width + 'px, text ' + scale + '%, ' + theme + ': no page-level horizontal overflow', se.scrollWidth <= width + 1, 'scrollWidth=' + se.scrollWidth + (offenders.length ? ' offenders: ' + offenders.join(', ') : ''));
+      f.remove();
+    }
+  } catch (e) { if (!(e && e.skip)) add('harness', 'harness error', false, e.stack || String(e)); }
+  const failed = rows.filter((r) => r.pass === false).length, manual = rows.filter((r) => r.pass === 'manual').length;
+  document.getElementById('status').textContent = rows.length + ' checks · ' + (rows.length - failed - manual) + ' pass · ' + failed + ' fail · ' + manual + ' manual · engine: ' + navigator.userAgent;
+  console.log('ALU_TEST_SUMMARY ' + JSON.stringify({ total: rows.length, failed, manual, ua: navigator.userAgent }));
+  rows.filter((r) => r.pass !== true).forEach((r) => console.log('ALU_TEST_NONPASS ' + JSON.stringify(r)));
+  window.__ALU_TEST_ROWS = rows;
+})();
+</script>
+</body>
+</html>

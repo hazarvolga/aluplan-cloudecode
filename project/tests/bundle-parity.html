@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><title>Bundle parity check</title>
+<link rel="stylesheet" href="../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="../_ds_bundle.js"></script>
+</head><body><pre id="o">running…</pre><div id="s" style="position:absolute;left:-9999px"></div>
+<script>
+(async () => {
+  const C = window.AluplanDesignSystem_84a18c, h = React.createElement, out = [], stage = document.getElementById('s');
+  const ok = (n, p, d) => { out.push((p ? 'PASS ' : 'FAIL ') + n + (d ? ' — ' + d : '')); };
+  const mount = (el) => { const d = document.createElement('div'); stage.appendChild(d); ReactDOM.flushSync(() => ReactDOM.createRoot(d).render(el)); return d; };
+  const sel = (d) => [...d.querySelectorAll('[role=tab]')].filter((t) => t.getAttribute('aria-selected') === 'true').map((t) => t.textContent);
+  const items = [{ id: 'a', label: 'A', disabled: true }, { id: 'b', label: 'B' }, { id: 'c', label: 'C', disabled: true }, { id: 'd', label: 'D' }];
+  ok('bundle loaded (' + Object.keys(C).length + ' exports)', !!C);
+  let d = mount(h(C.Tabs, { label: 't', items })); ok('Tabs: first enabled active', sel(d)[0] === 'B');
+  const b = d.querySelectorAll('[role=tab]')[1]; b.focus(); b.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowRight', bubbles: true })); await new Promise((r) => setTimeout(r));
+  ok('Tabs: ArrowRight skips disabled', sel(d)[0] === 'D');
+  ok('Tabs: empty renders nothing', mount(h(C.Tabs, { label: 't', items: [] })).innerHTML === '');
+  ok('Tabs: all disabled → none active', sel(mount(h(C.Tabs, { label: 't', items: items.map((i) => ({ ...i, disabled: true })) }))).length === 0);
+  ok('ReleaseTag: missing status → unknown', /statü bilinmiyor/.test(mount(h(C.ReleaseTag, { version: 'X' })).textContent));
+  const errs = []; const oe = console.error; console.error = (...a) => { errs.push(a.join(' ')); };
+  mount(h(C.Breadcrumb, { items: [{ label: 'A', href: '#' }, { label: 'A', href: '#' }, { label: 'Z' }] }));
+  mount(h(C.SiteFooter, { logoSrc: '../assets/logo/aluplan-logo-white-filled.svg', columns: [{ id: 'c1', heading: 'H', links: [{ id: 'l1', label: 'L', href: '#' }, { id: 'l2', label: 'L', href: '#' }] }] }));
+  await new Promise((r) => setTimeout(r, 30)); console.error = oe;
+  ok('keys: 0 duplicate-key warnings', errs.filter((e) => /same key/i.test(e)).length === 0);
+  const opener = document.createElement('button'); stage.appendChild(opener); opener.focus();
+  const dd = document.createElement('div'); stage.appendChild(dd); const root = ReactDOM.createRoot(dd);
+  ReactDOM.flushSync(() => root.render(h(C.Dialog, { open: false, title: 'T' }))); ReactDOM.flushSync(() => root.render(h(C.Dialog, { open: true, title: 'T' }))); await new Promise((r) => setTimeout(r, 30));
+  const dlg = dd.querySelector('dialog'); ok('Dialog: focus moves inside', dlg.open && dlg.contains(document.activeElement));
+  dlg.querySelector('button[aria-label]').click(); await new Promise((r) => setTimeout(r, 30)); ok('Dialog: focus returns', !dlg.open && document.activeElement === opener);
+  const img = mount(h(C.BrandLogo, {})).querySelector('img'); ok('BrandLogo default = filled variant', /aluplan-logo-white-filled\.svg$/.test(img.getAttribute('src')));
+  const fails = out.filter((l) => l.startsWith('FAIL')).length;
+  document.getElementById('o').textContent = out.join('\n'); console.log('ALU_BUNDLE ' + out.length + ' checks, ' + fails + ' fail\n' + out.join('\n'));
+})();
+</script></body></html>

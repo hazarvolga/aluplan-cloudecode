@@ -1,0 +1,16 @@
+/* Aluplan Design System — global entry. @import lines only. */
+@import url('./tokens/fonts.css');
+@import url('./tokens/primitives.css');
+@import url('./tokens/semantic.css');
+@import url('./tokens/component-aliases.css');
+@import url('./components/base.css');
+@import url('./components/actions/actions.css');
+@import url('./components/typography/typography.css');
+@import url('./components/layout/layout.css');
+@import url('./components/surfaces/surfaces.css');
+@import url('./components/forms/forms.css');
+@import url('./components/feedback/feedback.css');
+@import url('./components/disclosure/disclosure.css');
+@import url('./components/navigation/navigation.css');
+@import url('./components/patterns/patterns.css');
+@import url('./components/responsive.generated.css');

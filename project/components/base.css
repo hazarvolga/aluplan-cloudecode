@@ -1,0 +1,26 @@
+/* Base: document defaults + shared utilities. Uses semantic tokens only. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;background:var(--surface-page)}
+body{margin:0;overflow-wrap:break-word;background:var(--surface-page);color:var(--text-primary);font-family:var(--font-body);font-size:var(--type-body-size);line-height:var(--type-body-line-height);font-weight:var(--font-weight-body);-webkit-font-smoothing:antialiased}
+:where(*,*::before,*::after){box-sizing:border-box}
+:where(img,svg,video){max-width:100%}
+:where(a){color:var(--text-link)}
+:where(a:hover){color:var(--text-link-hover)}
+:where(a,button,input,select,textarea,summary,[tabindex]):focus-visible{outline:var(--focus-width) solid var(--focus-ring);outline-offset:var(--focus-offset)}
+.alu-on-brand :focus-visible,.alu-on-brand:focus-visible{outline-color:var(--focus-ring-on-brand)}
+.alu-visually-hidden{position:absolute!important;width:1px; /* raw-ok: a11y visually-hidden constant */
+  height:1px; /* raw-ok: a11y visually-hidden constant */
+  padding:0;margin:-1px; /* raw-ok: a11y visually-hidden constant */
+  overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.alu-skip-link{position:absolute;left:var(--space-inline-md);top:var(--space-inline-md);z-index:var(--z-dialog);padding:var(--space-inset-xs) var(--space-inset-sm);background:var(--surface-default);color:var(--text-primary);border-radius:var(--radius-control);transform:translateY(-200%)}
+.alu-skip-link:focus{transform:none}
+.alu-icon{width:var(--icon-size-md);height:var(--icon-size-md);flex:none;stroke-width:var(--icon-stroke);vertical-align:middle}
+.alu-icon--sm{width:var(--icon-size-sm);height:var(--icon-size-sm)}
+.alu-icon--lg{width:var(--icon-size-lg);height:var(--icon-size-lg)}
+.alu-spinner{animation:alu-spin calc(var(--motion-duration-slow) * 3) linear infinite}
+@keyframes alu-spin{to{transform:rotate(360deg)}}
+.alu-brand-logo{display:inline-flex;max-width:100%;min-width:0;align-items:center;justify-content:center;background:var(--surface-brand);padding:var(--space-inset-xs) var(--space-inset-sm);border-radius:var(--radius-control);line-height:0;text-decoration:none}
+.alu-brand-logo--bare{background:transparent;padding:0;border-radius:0}
+.alu-brand-logo img{display:block;width:auto;max-width:100%;object-fit:contain}
+.alu-brand-logo--sm img{height:var(--logo-height-sm)}
+.alu-brand-logo--md img{height:var(--logo-height-md)}
+.alu-brand-logo--lg img{height:var(--logo-height-lg)}

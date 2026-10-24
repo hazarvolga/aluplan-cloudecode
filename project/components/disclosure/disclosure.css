@@ -1,0 +1,17 @@
+/* Tabs, Accordion */
+.alu-tabs{display:flex;flex-direction:column;gap:var(--space-stack-md);min-width:0}
+.alu-tabs__list{display:flex;gap:var(--space-inline-xs);border-bottom:var(--border-width-default) solid var(--border-default);overflow-x:auto;scrollbar-width:thin}
+.alu-tab{flex:none;min-height:var(--target-min);padding:var(--space-inline-sm) var(--space-inline-md);margin-bottom:calc(-1 * var(--border-width-default));border:0;border-bottom:var(--border-width-strong) solid transparent;background:transparent;color:var(--text-secondary);font-family:var(--font-body);font-size:var(--type-label-size);line-height:var(--type-label-line-height);font-weight:var(--font-weight-label);cursor:pointer;max-width:var(--tabs-tab-max-width);text-align:start}
+.alu-tab:hover{color:var(--text-primary);border-bottom-color:var(--border-strong)}
+.alu-tab[aria-selected="true"]{color:var(--text-primary);font-weight:var(--font-weight-strong);border-bottom-color:var(--accent-border)}
+.alu-tab:disabled{color:var(--text-disabled);cursor:not-allowed}
+.alu-tabs__panel:focus-visible{outline-offset:var(--space-inline-xs)}
+.alu-accordion{border-top:var(--border-width-default) solid var(--border-default)}
+.alu-accordion__item{border-bottom:var(--border-width-default) solid var(--border-default)}
+.alu-accordion__heading{margin:0}
+.alu-accordion__trigger{display:flex;width:100%;align-items:center;justify-content:space-between;gap:var(--space-inline-md);min-height:var(--target-min);padding:var(--space-inset-sm) 0;border:0;background:transparent;color:var(--text-primary);font-family:var(--font-heading);font-weight:var(--font-weight-heading);font-size:var(--type-h4-size);line-height:var(--type-h4-line-height);text-align:start;cursor:pointer}
+.alu-accordion__trigger:hover{color:var(--text-link-hover)}
+.alu-accordion__trigger .alu-icon{transition:transform var(--motion-duration-base) var(--motion-easing-standard)}
+.alu-accordion__trigger[aria-expanded="true"] .alu-icon{transform:rotate(180deg)}
+.alu-accordion__panel{padding:0 0 var(--space-inset-md)}
+.alu-accordion__panel[hidden]{display:none}

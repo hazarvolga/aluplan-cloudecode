@@ -1,0 +1,117 @@
+{
+ "$meta": {
+  "status": "demo",
+  "contract": "Demo content contract v2 (not an approved production content model).",
+  "notice": "DEMO VERİ. Ürün özetleri, paket kapsamı ve sürüm bilgileri doğrulanmamıştır; yalnız tasarım sistemi örneklerini beslemek içindir. Gerçek içerik onaylı kaynaklardan girilmelidir.",
+  "locale": "tr-TR"
+ },
+ "site": {
+  "nav": [
+   {"id": "nav-products", "label": "Ürünler", "href": "#products"},
+   {"id": "nav-solutions", "label": "Çözümler", "href": "#cozumler"},
+   {"id": "nav-training", "label": "Eğitim", "href": "#egitim"},
+   {"id": "nav-support", "label": "Destek", "href": "#destek"},
+   {"id": "nav-contact", "label": "İletişim", "href": "#iletisim"}
+  ],
+  "footer": [
+   {"id": "f-portfolio", "heading": "Portföy", "links": [{"id": "f-products", "label": "Ürünler", "href": "#products"}, {"id": "f-compare", "label": "Paket karşılaştırması", "href": "#compare"}]},
+   {"id": "f-services", "heading": "Hizmetler", "links": [{"id": "f-training", "label": "Eğitim", "href": "#egitim"}, {"id": "f-support", "label": "Teknik destek", "href": "#destek"}]},
+   {"id": "f-company", "heading": "Aluplan", "links": [{"id": "f-about", "label": "Hakkımızda (yer tutucu)", "href": "#hakkimizda"}, {"id": "f-contact", "label": "İletişim", "href": "#iletisim"}]}
+  ],
+  "legal": "© Aluplan. Yasal metin ve şirket bilgileri yer tutucudur."
+ },
+ "ctas": [
+  {"id": "quote", "kind": "quote", "label": "Teklif iste", "href": "https://forms.office.com/r/hXhnKAG912", "external": true},
+  {"id": "trial", "kind": "trial", "label": "Deneme veya abonelik seçenekleri", "href": "https://www.allplan.com/trial-or-subscription", "external": true}
+ ],
+ "roles": [
+  {"id": "architect", "label": "Mimar", "icon": "building-2", "description": "Tasarım, modelleme ve paftalama ekipleri."},
+  {"id": "engineer", "label": "Mühendis", "icon": "ruler", "description": "Yapı ve altyapı mühendisliği ekipleri."},
+  {"id": "precast", "label": "Prekast", "icon": "boxes", "description": "Prekast eleman tasarımı ve üretim hazırlığı ekipleri."}
+ ],
+ "markets": [
+  {"id": "tr", "label": "Türkiye"}
+ ],
+ "products": [
+  {"id": "allplan", "name": "ALLPLAN", "vendor": "ALLPLAN (Nemetschek Group)", "summary": "Mimarlık, mühendislik ve prekast ekipleri için BIM tabanlı tasarım yazılımı. [Demo özet — onaylı ürün metniyle değiştirilecek.]", "roles": ["architect", "engineer", "precast"], "isDemo": true},
+  {"id": "portfolio-long", "name": "Örnek Portföy Ürünü: Şantiye ve Prekast Üretim Planlama İçin Çok Uzun Ürün Adı Taşma Testi", "vendor": "Yer tutucu üretici", "summary": "Uzun ad, Türkçe karakter (İ ı Ğ ğ Ş ş Ç ç Ö ö Ü ü) ve dar kart genişliği testi için kurgusal kayıt. Gerçek bir ürünü temsil etmez.", "roles": ["precast"], "isDemo": true}
+ ],
+ "releases": [
+  {"id": "synthetic-s1", "productId": "allplan", "version": "Sentetik sürüm S1", "sequence": 1, "status": "placeholder", "isSynthetic": true,
+   "sourceNote": "Sentetik test sürümü. Gerçek bir ALLPLAN sürümünü temsil etmez.",
+   "items": [{"id": "s1-n1", "category": "Yer tutucu", "title": "S1 yenilik maddesi (sentetik)", "body": "Yerleşim örneği. Resmî sürüm notu değildir."}]},
+  {"id": "synthetic-s2", "productId": "allplan", "version": "Sentetik sürüm S2", "sequence": 2, "status": "placeholder", "isSynthetic": true,
+   "sourceNote": "Sentetik test sürümü. Gerçek bir ALLPLAN sürümünü temsil etmez.",
+   "items": [
+    {"id": "s2-n1", "category": "Yer tutucu", "title": "S2 yenilik maddesi başlığı (sentetik)", "body": "Resmî sürüm notundaki açıklama buraya gelecek. Bu satır iki satırlık metin yerleşimini gösterir."},
+    {"id": "s2-n2", "category": "Yer tutucu", "title": "Çok uzun bir yenilik başlığının dar ekranda nasıl kırıldığını gösteren sentetik satır: Çiğdem Şükrü İğdır Özgür", "body": ""}
+   ]}
+ ],
+ "packages": [
+  {"id": "pkg-a", "productId": "allplan", "name": "Paket A (demo)"},
+  {"id": "pkg-b", "productId": "allplan", "name": "Paket B (demo)"},
+  {"id": "pkg-c", "productId": "allplan", "name": "Paket C — uzun paket adı örneği (demo)"}
+ ],
+ "capabilityGroups": [
+  {"id": "g-model", "label": "Modelleme", "capabilities": [{"id": "c-2d", "name": "2B çizim ve paftalama"}, {"id": "c-3d", "name": "3B BIM modelleme"}]},
+  {"id": "g-eng", "label": "Mühendislik", "capabilities": [{"id": "c-rebar", "name": "Donatı modelleme"}, {"id": "c-precast", "name": "Prekast eleman planlama"}]},
+  {"id": "g-collab", "label": "İş birliği", "capabilities": [{"id": "c-ifc", "name": "IFC veri alışverişi"}]}
+ ],
+ "scopeRecords": [
+  {"id": "sr-1", "packageId": "pkg-a", "releaseId": "synthetic-s1", "marketId": "tr", "capabilityId": "c-2d", "availability": "included", "source": {"kind": "demo"}, "verification": "unverified"},
+  {"id": "sr-2", "packageId": "pkg-a", "releaseId": "synthetic-s1", "marketId": "tr", "capabilityId": "c-3d", "availability": "included", "source": {"kind": "demo"}, "verification": "unverified"},
+  {"id": "sr-3", "packageId": "pkg-a", "releaseId": "synthetic-s1", "marketId": "tr", "capabilityId": "c-rebar", "availability": "excluded", "source": {"kind": "demo"}, "verification": "unverified"},
+  {"id": "sr-4", "packageId": "pkg-a", "releaseId": "synthetic-s1", "marketId": "tr", "capabilityId": "c-ifc", "availability": "included", "source": {"kind": "demo"}, "verification": "unverified"},
+  {"id": "sr-5", "packageId": "pkg-b", "releaseId": "synthetic-s1", "marketId": "tr", "capabilityId": "c-2d", "availability": "included", "source": {"kind": "demo"}, "verification": "unverified"},
+  {"id": "sr-6", "packageId": "pkg-b", "releaseId": "synthetic-s1", "marketId": "tr", "capabilityId": "c-3d", "availability": "included", "source": {"kind": "demo"}, "verification": "unverified"},
+  {"id": "sr-7", "packageId": "pkg-b", "releaseId": "synthetic-s1", "marketId": "tr", "capabilityId": "c-rebar", "availability": "included", "source": {"kind": "demo"}, "verification": "unverified"},
+  {"id": "sr-8", "packageId": "pkg-c", "releaseId": "synthetic-s1", "marketId": "tr", "capabilityId": "c-2d", "availability": "included", "source": {"kind": "demo"}, "verification": "unverified"},
+  {"id": "sr-9", "packageId": "pkg-a", "releaseId": "synthetic-s2", "marketId": "tr", "capabilityId": "c-2d", "availability": "included", "source": {"kind": "demo"}, "verification": "unverified"},
+  {"id": "sr-10", "packageId": "pkg-a", "releaseId": "synthetic-s2", "marketId": "tr", "capabilityId": "c-3d", "availability": "included", "source": {"kind": "demo"}, "verification": "unverified"},
+  {"id": "sr-11", "packageId": "pkg-a", "releaseId": "synthetic-s2", "marketId": "tr", "capabilityId": "c-rebar", "availability": "optional", "note": "Sentetik: S2'de ek seçenek", "source": {"kind": "demo"}, "verification": "unverified"},
+  {"id": "sr-12", "packageId": "pkg-b", "releaseId": "synthetic-s2", "marketId": "tr", "capabilityId": "c-2d", "availability": "included", "source": {"kind": "demo"}, "verification": "unverified"},
+  {"id": "sr-13", "packageId": "pkg-b", "releaseId": "synthetic-s2", "marketId": "tr", "capabilityId": "c-precast", "availability": "optional", "note": "Sentetik ek modül örneği", "source": {"kind": "demo"}, "verification": "unverified"},
+  {"id": "sr-14", "packageId": "pkg-b", "releaseId": "synthetic-s2", "marketId": "tr", "capabilityId": "c-ifc", "availability": "included", "source": {"kind": "demo"}, "verification": "unverified"},
+  {"id": "sr-15", "packageId": "pkg-c", "releaseId": "synthetic-s2", "marketId": "tr", "capabilityId": "c-ifc", "availability": "included", "source": {"kind": "demo"}, "verification": "unverified"}
+ ],
+ "resources": [
+  {"id": "r-brochure", "productId": "allplan", "kind": "pdf", "title": "Ürün broşürü", "description": "Onaylı broşür dosyası eklendiğinde bağlantı etkinleşir.", "href": null, "language": "Türkçe"},
+  {"id": "r-video", "productId": "allplan", "kind": "video", "title": "Tanıtım videosu", "description": "Video kaynağı henüz belirlenmedi.", "href": null}
+ ],
+ "support": [
+  {"id": "s-training", "icon": "graduation-cap", "title": "Eğitim", "description": "Eğitim programı ve takvim bilgisi yer tutucudur.", "actions": []},
+  {"id": "s-support", "icon": "life-buoy", "title": "Teknik destek", "description": "Destek kanalı ve çalışma saatleri yer tutucudur.", "actions": []}
+ ],
+ "pages": {
+  "products": {
+   "title": "Ürünler",
+   "intro": "Aluplan portföyündeki ürün kayıtları. Liste demo veriden üretilir.",
+   "roleLegend": "Hangi ekip için arıyorsunuz?",
+   "allRole": {"id": "all", "label": "Tümü", "icon": "layers", "description": "Tüm portföy kayıtları."}
+  },
+  "productDetail": {
+   "packagesHeading": "Paketler",
+   "packagesIntro": "Paket, ürünün kapsam setidir; ürün adı ve yıllık sürümden ayrı tutulur.",
+   "packageCardText": "Paket açıklaması onaylı kaynaktan girilecek.",
+   "releaseHeading": "Yenilikler",
+   "releaseEmpty": "Bu ürün için sürüm bilgisi yok.",
+   "resourcesHeading": "Kaynaklar",
+   "supportHeading": "Eğitim ve destek",
+   "faqHeading": "Kavramlar",
+   "faq": [
+    {"id": "faq-entities", "question": "Ürün, paket ve sürüm arasındaki fark nedir?", "answer": "Ürün yazılımın kendisidir. Paket, o ürünün kapsam setidir. Sürüm, ürünün yıllık yayınıdır. Sayfada üçü ayrı bileşenlerle gösterilir."},
+    {"id": "faq-unknown", "question": "“Bilgi yok” bir özelliğin olmadığı anlamına mı gelir?", "answer": "Hayır. Kapsam doğrulanmadığı için gösterilemiyor demektir. “Dahil değil” yalnız doğrulanmış bilgi için kullanılır."}
+   ],
+   "ctaHeading": "Teklif veya deneme",
+   "ctaText": "Her iki bağlantı da harici sayfada yeni sekmede açılır. Bu sayfa form göndermez."
+  },
+  "comparison": {
+   "titleSuffix": "paket karşılaştırması",
+   "intro": "Satırlar yetenek alanlarını, sütunlar paketleri gösterir. Kapsam; paket, sürüm ve pazar birleşimine bağlıdır. Doğrulanmamış veya kaydı olmayan hücreler “Bilgi yok” olarak işaretlenir ve “Dahil değil” ile karıştırılmaz.",
+   "captionSuffix": "paket kapsamı (demo veri)",
+   "footnote": "Demo matris; resmî paket kapsamı değildir. Kaydı olmayan hücreler otomatik olarak “Bilgi yok” gösterilir.",
+   "ctaHeading": "Paket seçiminde yardım",
+   "ctaText": "Teklif formu ve deneme sayfası harici bağlantılardır."
+  }
+ }
+}

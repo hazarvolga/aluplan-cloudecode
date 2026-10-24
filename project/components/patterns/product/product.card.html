@@ -1,0 +1,29 @@
+<!-- @dsCard group="Aluplan patterns" viewport="900x720" name="Product" subtitle="ProductCard, ReleaseTag, ReleaseNotes, PackageComparison (demo data)" -->
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../../../styles.css">
+<style>body{padding:20px}.dk-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.dk-col{display:flex;flex-direction:column;gap:16px}.dk-scope{padding:16px;background:var(--surface-page);color:var(--text-primary);border-radius:6px;display:flex;flex-direction:column;gap:12px}.dk-tag{font-family:var(--font-mono);font-size:11px;color:var(--text-secondary)}</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../../_ds_bundle.js"></script>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { ProductCard, ReleaseTag, ReleaseNotes, PackageComparison } = window.AluplanDesignSystem_84a18c;
+const LOGO = '../../../assets/logo/aluplan-logo-white-filled.svg';
+const Scopes = ({ children, list = [['aluplan','light'],['aluplan','dark'],['field','light']] }) => (
+  <div className="dk-col">{list.map(([t, m]) => <div key={t+m} className="dk-scope" data-theme={t} data-mode={m}><span className="dk-tag">{t} / {m}</span>{children}</div>)}</div>
+);
+function App() { return (
+<div className="dk-col">
+  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0,1fr))', gap: 16 }}>
+    <ProductCard isDemo vendor="ALLPLAN (Nemetschek Group)" name="ALLPLAN" summary="BIM tabanlı tasarım yazılımı. [Demo özet]" href="#" roles={['Mimar','Mühendis','Prekast']} release={{version:'ALLPLAN 20XX',status:'placeholder'}} />
+    <ProductCard isDemo vendor="Yer tutucu üretici" name="Örnek Portföy Ürünü: Şantiye ve Prekast Üretim Planlama İçin Çok Uzun Ürün Adı Taşma Testi" summary="Uzun ad testi." href="#" roles={['Prekast']} />
+  </div>
+  <div className="dk-row"><ReleaseTag version="ALLPLAN 20XX" status="placeholder" /><ReleaseTag version="Örnek 2.0" status="current" /><ReleaseTag version="Örnek 1.0" status="previous" /></div>
+  <PackageComparison caption="Paket kapsamı (demo veri)" footnote="Demo matris; resmî paket kapsamı değildir." packages={[{id:'a',name:'Paket A (demo)'},{id:'b',name:'Paket B (demo)'},{id:'c',name:'Paket C — uzun ad (demo)'}]} groups={[{id:'g1',label:'Modelleme',capabilities:[{id:'x',name:'2B çizim ve paftalama'},{id:'y',name:'3B BIM modelleme'}]},{id:'g2',label:'Mühendislik',capabilities:[{id:'z',name:'Donatı modelleme'}]}]} cells={{'a:x':{availability:'included'},'a:y':{availability:'included'},'a:z':{availability:'excluded'},'b:x':{availability:'included'},'b:y':{availability:'included'},'b:z':{availability:'optional',note:'Ek modül örneği'},'c:x':{availability:'included'}}} />
+  <ReleaseNotes headingLevel={3} release={{version:'ALLPLAN 20XX',status:'placeholder'}} sourceNote="Maddeler yerleşim örneğidir." items={[{id:'1',category:'Yer tutucu',title:'Yenilik maddesi başlığı (örnek)',body:'Resmî sürüm notundaki açıklama buraya gelecek.'}]} />
+</div>
+); }
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script></body></html>

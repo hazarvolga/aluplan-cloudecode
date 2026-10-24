@@ -1,0 +1,29 @@
+<!-- @dsCard group="Components" viewport="700x420" name="Typography" subtitle="Heading level vs. size, Text variants" -->
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../../styles.css">
+<style>body{padding:20px}.dk-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.dk-col{display:flex;flex-direction:column;gap:16px}.dk-scope{padding:16px;background:var(--surface-page);color:var(--text-primary);border-radius:6px;display:flex;flex-direction:column;gap:12px}.dk-tag{font-family:var(--font-mono);font-size:11px;color:var(--text-secondary)}</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { Heading, Text } = window.AluplanDesignSystem_84a18c;
+const LOGO = '../../assets/logo/aluplan-logo-white-filled.svg';
+const Scopes = ({ children, list = [['aluplan','light'],['aluplan','dark'],['field','light']] }) => (
+  <div className="dk-col">{list.map(([t, m]) => <div key={t+m} className="dk-scope" data-theme={t} data-mode={m}><span className="dk-tag">{t} / {m}</span>{children}</div>)}</div>
+);
+function App() { return (
+<div className="dk-col">
+  <Heading level={1} size="display">Mimari berraklık</Heading>
+  <Heading level={2}>Paket karşılaştırması</Heading>
+  <Heading level={3}>Yenilikler — İĞŞÇÖÜ ığşçöü</Heading>
+  <Heading level={4} size="h4">h4: Prekast eleman planlama</Heading>
+  <Text variant="body-lg" prose>Gövde metni (büyük). Türkçe karakterler: İstanbul, Iğdır, Çeşme, Göçmen, Üsküdar, Şişli.</Text>
+  <Text tone="secondary" prose>İkincil gövde metni; açıklamalar ve yardımcı bilgiler için.</Text>
+  <div className="dk-row"><Text variant="label">Etiket</Text><Text variant="caption" tone="secondary">Altyazı</Text><Text variant="mono" tone="secondary">IFC · DWG · teknik etiket</Text></div>
+</div>
+); }
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script></body></html>

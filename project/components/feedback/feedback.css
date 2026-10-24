@@ -1,0 +1,21 @@
+/* Alert, Dialog */
+.alu-alert{display:grid;grid-template-columns:auto minmax(0,1fr);gap:var(--space-inline-md);padding:var(--space-inset-sm) var(--space-inset-md);border:var(--border-width-default) solid var(--status-info-border);border-radius:var(--radius-surface);background:var(--status-info-bg);color:var(--text-primary)}
+.alu-alert>.alu-icon{color:var(--status-info-fg);margin-top:0.1em}
+.alu-alert__body{display:flex;flex-direction:column;gap:var(--space-stack-xs);min-width:0}
+.alu-alert__title{margin:0;font-family:var(--font-body);font-weight:var(--font-weight-strong);font-size:var(--type-body-size);line-height:var(--type-body-sm-line-height)}
+.alu-alert__content{overflow-wrap:anywhere;font-size:var(--type-body-sm-size);line-height:var(--type-body-sm-line-height)}
+.alu-alert--success{border-color:var(--status-success-border);background:var(--status-success-bg)}
+.alu-alert--success>.alu-icon{color:var(--status-success-fg)}
+.alu-alert--warning{border-color:var(--status-warning-border);background:var(--status-warning-bg)}
+.alu-alert--warning>.alu-icon{color:var(--status-warning-fg)}
+.alu-alert--danger{border-color:var(--status-danger-border);background:var(--status-danger-bg)}
+.alu-alert--danger>.alu-icon{color:var(--status-danger-fg)}
+.alu-dialog{width:min(100% - 2 * var(--container-gutter),var(--dialog-max-width));max-height:calc(100dvh - 2 * var(--container-gutter));padding:0;border:var(--border-width-default) solid var(--border-default);border-radius:var(--dialog-radius);background:var(--dialog-bg);color:var(--text-primary);box-shadow:var(--dialog-shadow);overflow:auto}
+.alu-dialog[open]{animation:alu-fade-in var(--motion-duration-base) var(--motion-easing-enter)}
+/* ::backdrop inherits custom properties from its dialog in current browsers (Chrome 122+, Firefox 120+, Safari 17.4+).
+   Older engines ignore the declaration and show the UA default backdrop; no raw color fallback is kept. */
+.alu-dialog::backdrop{background:var(--dialog-scrim)}
+.alu-dialog__inner{display:flex;flex-direction:column;gap:var(--space-stack-md);padding:var(--space-inset-md)}
+.alu-dialog__header{display:flex;align-items:flex-start;justify-content:space-between;gap:var(--space-inline-md)}
+.alu-dialog__footer{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:var(--space-inline-sm)}
+@keyframes alu-fade-in{from{opacity:0;transform:translateY(var(--space-stack-sm))}to{opacity:1;transform:none}}

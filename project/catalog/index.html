@@ -1,0 +1,72 @@
+<!-- @dsCard group="Website UI kit" viewport="1280x800" name="Component catalog" subtitle="All components with purpose, tokens, a11y, states; theme / mode / width / text-size switcher" -->
+<!doctype html>
+<html lang="tr" data-theme="aluplan" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aluplan — bileşen kataloğu (taslak)</title>
+<link rel="stylesheet" href="../styles.css">
+<style>
+.cat-row{display:flex;flex-wrap:wrap;gap:var(--space-inline-md);align-items:center}
+.cat-entry{display:grid;gap:var(--space-stack-md);padding-block:var(--space-stack-lg);border-top:var(--border-width-default) solid var(--border-default)}
+@media (min-width:64rem){.cat-entry{grid-template-columns:20rem minmax(0,1fr);column-gap:var(--space-inline-lg)}}
+.cat-meta{margin:0;display:grid;gap:var(--space-stack-xs);font-size:var(--type-body-sm-size);line-height:var(--type-body-sm-line-height)}
+.cat-meta dt{font-family:var(--font-mono);font-size:var(--type-mono-size);color:var(--text-secondary)}
+.cat-meta dd{margin:0 0 var(--space-stack-xs)}
+.cat-demo{min-width:0;padding:var(--space-inset-md);border:var(--border-width-default) dashed var(--border-default);border-radius:var(--radius-surface);background:var(--surface-page)}
+.cat-toc{display:flex;flex-wrap:wrap;gap:var(--space-inline-xs) var(--space-inline-md);margin:0;padding:0;list-style:none;font-size:var(--type-body-sm-size)}
+</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../_ds_bundle.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" src="../ui_kits/website/PreviewShell.jsx"></script>
+<script type="text/babel" src="catalog-spec.jsx"></script>
+<script type="text/babel">
+const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+function Catalog() {
+  const { Container, Heading, Text, Stack, Alert, BrandLogo } = window.AluplanDesignSystem_84a18c;
+  const groups = [...new Set(CATALOG.map((c) => c.group))];
+  return (
+    <main style={{ background: 'var(--surface-page)', color: 'var(--text-primary)', minHeight: '100vh' }}>
+      <Container size="xl" style={{ paddingBlock: 'var(--space-stack-xl)' }}>
+        <Stack gap="lg">
+          <Stack gap="sm">
+            <div><BrandLogo src="../assets/logo/aluplan-logo-white-filled.svg" size="md" /></div>
+            <Heading level={1}>Bileşen kataloğu</Heading>
+            <Text tone="secondary" prose>Taslak. Tema ve mod üstteki önizleme çubuğundan değişir; içerik, DOM ve bileşen kaynağı aynı kalır.</Text>
+          </Stack>
+          <Alert tone="warning" title="Taslak tasarım sistemi">Renkler ve fontlar onaylı standart değildir. Örnek içerik demo olarak işaretlidir.</Alert>
+          <nav aria-label="Katalog içindekiler"><ul className="cat-toc">{CATALOG.map((c) => <li key={c.name}><a href={'#' + slug(c.name)}>{c.name}</a></li>)}</ul></nav>
+          {groups.map((g) => (
+            <section key={g} aria-labelledby={'g-' + slug(g)}>
+              <Heading level={2} id={'g-' + slug(g)}>{g}</Heading>
+              {CATALOG.filter((c) => c.group === g).map((c) => (
+                <article className="cat-entry" key={c.name} id={slug(c.name)} aria-labelledby={'h-' + slug(c.name)}>
+                  <div>
+                    <Heading level={3} size="h4" id={'h-' + slug(c.name)}>{c.name}</Heading>
+                    <dl className="cat-meta">
+                      <dt>Amaç</dt><dd>{c.purpose}</dd>
+                      <dt>Varyant</dt><dd>{c.variants}</dd>
+                      <dt>Token bağımlılığı</dt><dd>{c.tokens}</dd>
+                      <dt>Erişilebilir davranış</dt><dd>{c.a11y}</dd>
+                      <dt>Durumlar</dt><dd>{c.states}</dd>
+                    </dl>
+                  </div>
+                  <div className="cat-demo">{c.demo()}</div>
+                </article>
+              ))}
+            </section>
+          ))}
+        </Stack>
+      </Container>
+    </main>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(window.AluplanDesignSystem_84a18c ? <PreviewShell title="Aluplan katalog"><Catalog /></PreviewShell> : <p style={{ padding: 24 }}>Tasarım sistemi paketi (_ds_bundle.js) yüklenemedi.</p>);
+</script>
+</body>
+</html>

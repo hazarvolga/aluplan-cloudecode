@@ -1,0 +1,29 @@
+<!-- @dsCard group="Components" viewport="700x460" name="Feedback" subtitle="Alert tones, Dialog (native, focus-managed)" -->
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../../styles.css">
+<style>body{padding:20px}.dk-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.dk-col{display:flex;flex-direction:column;gap:16px}.dk-scope{padding:16px;background:var(--surface-page);color:var(--text-primary);border-radius:6px;display:flex;flex-direction:column;gap:12px}.dk-tag{font-family:var(--font-mono);font-size:11px;color:var(--text-secondary)}</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { Alert, Dialog, Button } = window.AluplanDesignSystem_84a18c;
+const LOGO = '../../assets/logo/aluplan-logo-white-filled.svg';
+const Scopes = ({ children, list = [['aluplan','light'],['aluplan','dark'],['field','light']] }) => (
+  <div className="dk-col">{list.map(([t, m]) => <div key={t+m} className="dk-scope" data-theme={t} data-mode={m}><span className="dk-tag">{t} / {m}</span>{children}</div>)}</div>
+);
+function App() { return (
+(() => { const [open, setOpen] = React.useState(false); return (
+<div className="dk-col">
+  <Alert title="Bilgi">Paket kapsamı ürün sürümüne göre değişebilir.</Alert>
+  <Alert tone="success" title="Talebiniz alındı" live="polite">Örnek başarı mesajı.</Alert>
+  <Alert tone="warning" title="Demo veri">Bu tablo doğrulanmış paket kapsamı değildir.</Alert>
+  <Alert tone="danger" title="Form gönderilemedi">E-posta alanını kontrol edin.</Alert>
+  <div><Button variant="secondary" onClick={() => setOpen(true)}>Diyaloğu aç</Button></div>
+  <Dialog open={open} onClose={() => setOpen(false)} title="Harici sayfaya gidiyorsunuz" description="Teklif formu forms.office.com üzerinde yeni sekmede açılır." footer={<><Button variant="ghost" onClick={() => setOpen(false)}>Vazgeç</Button><Button href="https://forms.office.com/r/hXhnKAG912" external>Forma git</Button></>} />
+</div>); })()
+); }
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script></body></html>
